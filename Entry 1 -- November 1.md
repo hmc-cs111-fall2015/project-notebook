@@ -54,20 +54,20 @@ generate debug map as FILENAME
 ```
 
 
-''map'' is somewhat akin to a ''main'' function, though if it is more natural to the users to think of a map in the same way as the tiles, it may be possible to specify the tiles and map, and then specify each layer outside of the map object.
+``map`` is somewhat akin to a ``main`` function, though if it is more natural to the users to think of a map in the same way as the tiles, it may be possible to specify the tiles and map, and then specify each layer outside of the map object.
 Either way, only one map can exist per program.
 
 No origin specified assumes top left, as is standard for image processing.
-There probably won't be implementation that allows for the origin to be on the right-hand side of the image, but ''origin = bottomLeft'' seems more intuitive than ''origin = bottom''. (This can change, of course.)
+There probably won't be implementation that allows for the origin to be on the right-hand side of the image, but ``origin = bottomLeft`` seems more intuitive than ``origin = bottom``. (This can change, of course.)
 
-Given no ''from'' keyword, ''fill'' will fill the entire layer.
+Given no ``from`` keyword, ``fill`` will fill the entire layer.
 
-The ''from'' keyword assumes it will be given two opposite points of a rectangle to fill in.
+The ``from`` keyword assumes it will be given two opposite points of a rectangle to fill in.
 Some more planning must be done for other shapes, besides adding multiple froms. It seems best to allow users to specify a list of points to carve out a space to fill in, as well as letting them "draw a line" that divides the area and specify which side to fill in.
 
 
-I'm going back and forth on whether or not there should be a ''return'' statement. It's given that once you specify a map and output is on, it'll return something.
-Having output be a flag seems ridiculous, actually. They should just have to use ''return'', and if they don't, it'll give a warning but not an error (as they may want to debug before producing a map).
+I'm going back and forth on whether or not there should be a ``return`` statement. It's given that once you specify a map and output is on, it'll return something.
+Having output be a flag seems ridiculous, actually. They should just have to use ``return``, and if they don't, it'll give a warning but not an error (as they may want to debug before producing a map).
 
 Also, they should have to specify what to name the output map.
 I may not go so far as to give a warning if something with that name already exists; that would be implemented in the GUI.
