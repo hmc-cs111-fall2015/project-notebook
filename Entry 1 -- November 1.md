@@ -23,9 +23,8 @@ Found one. Will ask Prof Ben about it, then start on the project description.
 
 In filling out the language design and example computations part, I wrote a lot before reading that I shouldn't be describing the syntax of the program. This text will be put here, so that I won't lose it in case I need it later:
 
-'''
+```
 debugging = True
-
 tile water1 = SRCPATH
 tile ground1 = SRCPATH {
 	edge = SRCPATH
@@ -50,10 +49,9 @@ map {
 		at [(100, 650), (250, 600), (400, 300)] place house
 	}
 }
-
 generate map as FILENAME
 generate debug map as FILENAME
-'''
+```
 
 
 ''map'' is somewhat akin to a ''main'' function, though if it is more natural to the users to think of a map in the same way as the tiles, it may be possible to specify the tiles and map, and then specify each layer outside of the map object.
