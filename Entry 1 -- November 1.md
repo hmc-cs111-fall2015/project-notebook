@@ -86,11 +86,13 @@ I need to check how to save "in a current directory." Maybe a SRCPATH will be gi
 The user doesn't have to name the debug map; it will have a standard name.However, if they want to keep multiple ones for different maps, they can name them whatever they want.
 
 ###10/30/15
-2:15-p
+2:15-3:30p
 
 The library has been approved!
 
-Finished with plan.md. Next, I'll work on a preliminary grammer.
+Finished with plan.md.
+
+
 
 ## Questions
 
