@@ -2,12 +2,23 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+###11/2/15
+
+9:45-10:45
+
+Trying to get the scala files set up.
+
+Everything is almost working, the only problem is adding parsers; I have no clue how to add a jar file.
+Or work eclipse at all, basically.
+
+There's using "configue build path" which would be fine and dandy if scala-parser-combinators_2.11-1.0.4.jar was actually in the lib folder for External Piconot and not in Referenced Libraries which isn't accessible!
+Fantastic.
+
+_All I had to do was download the .jar file from the internet._
+
+With that being said, perhaps I can find a nice way to add the library I found.
+
+
 
 ## Questions
 
