@@ -1,13 +1,26 @@
-# Design notebook for week ending November 2, 2014
+# Design notebook for week ending November 1, 2015
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+I spent this week researching tools for parsing Java and Python,
+which are the two languages I'm considering for the underlying language
+for (at least one of the first iteratons of) [Codeviz].
+I spent more effort researching Java because I think Java stands to benefit
+more from Codeviz than Python, since (as I think most people would agree)
+Python is more readable. That said, the main reason I was considering Python
+is that I was of the belief that there would be more support for parsing Python.
+Through my research, I believe I found that the developers of both languages
+provide an abstract syntax for parsing needs; however,
+neither of these syntaxes include comments,
+so I was forced to look beyond the language documentation.
+
+In my continued research, I stumbled upon [ANTLR], which actually seems like
+it could be _super_ helpful to someone in the class. I haven't looked too much into the tool,
+but it appears to generate a parser based on a given grammar.
+There's a [GitHub project][ANTLR Grammars] in which there are grammars
+(and therefore parsers) written in ANTLR for a **lot** of programming languages.
+I didn't end up choosing the corresponding ANTLR Java parser because I found [JavaParser],
+which seemed more straightforward, better documented, and better supported.
 
 ## Questions
 
@@ -24,3 +37,8 @@ team, how did you share the labor?**
 ## Post-critique summary
 
 ## Post-critique reflection
+
+[ANTLR]: http://www.antlr.org/index.html
+[ANTLR Grammars]: https://github.com/antlr/grammars-v4
+[Codeviz]: https://github.com/JustisAllen/Codeviz
+[JavaParser]: http://javaparser.github.io/javaparser/
