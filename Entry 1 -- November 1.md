@@ -21,7 +21,6 @@ you?**
 
 * How did you approach building an intermediate representaion?
 * What language are you using and why? (I think I can answer this partially in the critique, but I would love to hear suggestions).
-* 
 
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
