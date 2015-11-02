@@ -28,11 +28,19 @@ which seemed more straightforward, better documented, and better supported.
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+The next thing I'd like to do is make sure JavaParser will work for me.
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+It would be cool if my critique partners could look over the description and plan
+and add any questions, comments, concern; is anything unclear?
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+I probably spent about 2 hours researching parsers,
+and another 5 hours on the description + plan writeup.
 
 ## Post-critique summary
 
