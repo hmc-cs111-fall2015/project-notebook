@@ -117,7 +117,7 @@ I'm not supposed to focus on semantics right now, but any feedback on the keywor
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
 
-
+4 hours, 5 minutes.
 
 ## Post-critique summary
 
