@@ -85,11 +85,28 @@ so that the code the interpreter doesn't have to do as much of the dirty work.
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+I guess a bit decision to make would be to decide how much freedom the user
+should have. Since this is a DSL based around removing constraints, I am 
+leaning towards the side of total freedom, but I guess time will tell if 
+this is the wrong choice. 
+
+I think it would be best to just start to write it, as I feel like I have a 
+pretty concrete idea of what I want this language to achieve. After some 
+experimenting, maybe new ideas will come out. 
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+I guess thinking of use cases other than the ones I have presented would be
+the most helpful thing right now. Since the syntax and partially the semantics
+are being designed around the use cases, the more there are, the better the
+language will be. 
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+I did a lot of research into icalendar and libraries that implement it. I
+would say I worked for 8 hours outside of class this week. 
 
 ## Post-critique summary
 
