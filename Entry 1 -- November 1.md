@@ -25,7 +25,7 @@ language to my external DSL. Here is the initial concept of the DSL:
 
 
 ```
-calendar school-calendar{
+calendar school-calendar {
 	
 	dates {
 		includes { 9/1/15 - 12/17/15 }
@@ -59,6 +59,25 @@ calendar school-calendar{
 	}
 }
 ```
+
+A large part of this project, I hope, will be allowing for templating of calendars.
+A problem I see currently with this is that we dont have an easy way of associating 
+different times to different sections, but have an event be in both sections without
+writing it. I plan on working on more design decisions for future proofing stuff
+like this in the following week. One idea I am working on is having sections work
+as a sort of tag. When an event uses that tag, that tag is assumed to be copied 
+inside of that section, so if the event "math" had a tag for finals and a tag for 
+classes, but was outside of both of them, it would be assumed that it truly under
+both of them.
+
+The only problem I have with this idea is that its not as "clean" as just having
+scoped objects. The language would have to precompute all posible sections before
+evaluating events. 
+
+I feel like this is pretty far in the future though, as this next week will be mostly
+implementing an API wrapper of the icalendar library, making it easier to call from
+my DSL. I will focus on the wrapper having a way to repeat over a time period, 
+so that the code the interpreter doesn't have to do as much of the dirty work. 
 
 ## Questions
 
