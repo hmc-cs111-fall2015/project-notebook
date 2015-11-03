@@ -175,6 +175,13 @@ team, how did you share the labor?**
 I didn't really keep track to be honest, I just worked whenever I could.
 I would guess somewhere around ~12 hours.
 
+### P.S.
+
+Just a note, you can run the project by starting `sbt` in the project
+directory.
+
+The do `run example.con` and select the `ConstructC` main function.
+
 ## Post-critique summary
 
 ## Post-critique reflection
