@@ -45,7 +45,7 @@ and another 5 hours on the description + plan writeup.
 ## Post-critique summary
 
 Dan had a fair amount to say about various parts of the project!
-He raised a concern about whether the language would induce an increase in comments,
+He raises a concern about whether the language would induce an increase in comments,
 and whether these comments would improve code readability.
 He suggests that "all control-flow sturctures _should_ be documented,"
 and in a similar vein believes users should receive an error
@@ -56,6 +56,60 @@ He's curious as to my strategy for handling instances
 when I get stuck or off track. And finally, he asks "Why Java?"
 
 ## Post-critique reflection
+
+One topic Dan picked up on that I've honestly been concerned about for some time
+is whether the comments users will be adding to generate the flowcharts
+will obstruct code readability due to the number of comments added.
+I think in the early stages of the language, these comments will indeed
+obstruct code readability for this reason; but one feature
+I think will alleviate this problem is enabling inlining of function comments
+whenever a given function is called: a user includes a Codeviz comment
+describing the function's behavior before the function's definition,
+then whenever that function shows up in the code,
+the description appears in the corresponding place in the flowchart,
+allowing users to reduce the number of comments explicity written in the code.
+
+To answer Dan's questions, I _hope_ that the language will ultimately lead
+to an improvement in the readability of the code itself
+since users must comment their code to benefit from the flowcharts,
+but I'm aware the early stages of the language will have the opposite effect.
+Regardless of whether there is an improvement in readability,
+I think Codeviz will induce an increase in comments&mdash;though
+I don't think this is necessarily a bad thing.
+
+I mentioned that Dan suggests that "all control-flow sturctures _should_ be documented,"
+but I'm not convinced. I think there may be times when we want the flowchart
+to represent a high level algorithm, but the code implementing the algorithm
+for some reason uses an `if` block in response to an implementation detail
+that we don't want to leak into the flowchart. I suppose I'd agree that I'd expect
+_most_ control flow structures to be documented, but I'm hesitant to agree that _all_ should;
+further, it seems important that the underlying language's syntax not leak into the flowchart
+so that the flowcharts are more accessible to non-programmers.
+
+I'm only slightly hesitant to produce an error when only a single branch is documented
+because I think there might be a valid usecase, but I'll probably just make it an error
+until someone complains (at which point I'll reconsider) since in most cases,
+users should probably be documenting all branches.
+
+I'll note that Prof Ben also suggested Graphviz to me.
+I'm still going to do some research into other flowchart creators,
+but it seems I'll probably be using Graphviz for the project.
+(Also Codeviz derives from Graphviz.) :relaxed:
+
+If I get bogged down in details or get stuck, I think it'll help
+to discuss the problem/current work with peers and Prof Ben.
+It'll also help to continually evaluate whether the current thing on which I'm working
+is actually a priority.
+
+Java is both the language in which I intend to implement
+the first iteration of Codeviz and the first language Codeviz will support&mdash;and yes,
+one of my first thoughts was that I'm hoping to include Codeviz comments in the source code.
+:stuck_out_tongue_winking_eye: My main reason for choosing Java
+as the first supported language is that the language is currently very popular,
+and I want to maximize my impact.
+
+Lastly, I just wanted to note that it's been affirming to see
+that people are interested in the project.
 
 [ANTLR]: http://www.antlr.org/index.html
 [ANTLR Grammars]: https://github.com/antlr/grammars-v4
