@@ -9,6 +9,8 @@ exciting milestones, preliminary results, etc. Feel free to include images
 code, and any other resources that you think will help clearly convey your
 design process.
 
+Starting last thursday I have been extremely sick and pretty much unable to think about anything having to do with school. I'm just now starting to recover which is great! 
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
