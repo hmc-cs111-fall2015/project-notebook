@@ -44,9 +44,21 @@ and another 5 hours on the description + plan writeup.
 
 ## Post-critique summary
 
+Dan had a fair amount to say about various parts of the project!
+He raised a concern about whether the language would induce an increase in comments,
+and whether these comments would improve code readability.
+He suggests that "all control-flow sturctures _should_ be documented,"
+and in a similar vein believes users should receive an error
+if only one branch of an `if`-`else` block is documented.
+He proposes [Graphviz] for the flowchart creation language
+because there are libraries for using its features.
+He's curious as to my strategy for handling instances
+when I get stuck or off track. And finally, he asks "Why Java?"
+
 ## Post-critique reflection
 
 [ANTLR]: http://www.antlr.org/index.html
 [ANTLR Grammars]: https://github.com/antlr/grammars-v4
 [Codeviz]: https://github.com/JustisAllen/Codeviz
+[Graphviz]: http://www.graphviz.org/
 [JavaParser]: http://javaparser.github.io/javaparser/
