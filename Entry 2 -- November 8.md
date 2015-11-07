@@ -4,7 +4,7 @@
 
 ###11/2/15
 
-9:45-10:45
+9:45-10:45a
 
 Trying to get the scala files set up.
 
@@ -20,7 +20,7 @@ With that being said, perhaps I can find a nice way to add the library I found.
 
 ###11/4/15
 
-1:15-2:30
+1:15-2:30p
 In-class work time.
 
 Re-downloading the .jar file. Apparently it wasn’t put in the FreeTyle folder (should fix this).
@@ -54,6 +54,22 @@ Implement these objects, or at least up to Layers, because the AST will be a lis
 
 Then, start focusing on semantics and outputting an image before working on any parsing.
 
+###11/7/15
+9:30-10:45a
+
+It seems like it would be easier to work on freeform tile placement first, for the first deliverable.
+
+Now is the time to try, again, to add the IP library (scrimage) using sbt.
+
+I have no idea how to use sbt.
+
+Since this is just layering images and nothing else, I'll just do it myself using the built-in Java stuff(java.awt.image.BufferedImage is a thing).
+
+For now, the background color is set to white.
+
+11:30- 12:30a
+
+Started to implement semantics.scala.
 
 
 
