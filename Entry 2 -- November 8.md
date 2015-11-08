@@ -71,7 +71,12 @@ For now, the background color is set to white.
 
 Started to implement semantics.scala.
 
+9:00-11:00p
 
+I have no idea if it works, but I have semantics using `java.io.File` and `java.awt`
+Time to write a parser to see if it does!
+
+Parsing is going to take more work than expected. It would be best to write a file with the test code first, and then base the parser off of it.
 
 ## Questions
 
