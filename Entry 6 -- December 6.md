@@ -1,4 +1,4 @@
-# Design notebook for week ending November 30, 2014
+# Design notebook for week ending December 6, 2015
 
 ## Description
 
