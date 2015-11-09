@@ -121,8 +121,39 @@ pros and cons to be?
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
 
-I think I spent ~6 hours outside of class.
+I think I spent ~8 hours outside of class.
 
 ## Post-critique summary
 
+Anna thoughts include:
+
+Enumerable and non-enumerable sets of points do seem different enough that your
+language should handle them differently.
+
+Perhaps thinking about weird cases such as intersecting a line with itself
+isn't worth it. Perhaps just make it an error and move along.
+
+Unifying the geometric types under a single 'locus' type might make things more
+ambiguous.
+
 ## Post-critique reflection
+
+I've discussed these topics in detail in my next journal entry, but I'll
+include a summary here.
+
+I agree that the PL and geometric engine should treat different geometric
+objects in different ways. In that way they should have different types.
+
+I think that is is important though that the geometric engine be very robust
+from a type perspective. I think that intersecting a line with itself should
+give an geometrically precise answer, even if this doesn't seem to be necessary
+now. Part of the reason for doing this is that I would like the engine to be a
+robust library, capable of standing on its own (dare I even say internal DSL?).
+
+My solution to this is to maintain the distinct type system, but erase the
+static difference between them. This means the only way to distinguish the
+results of an intersection would be to compute the intersection and examine the
+types of the resulting runtime objects.
+
+Essentially, when you intersect two lines you need to do th intersection to see
+if you get 0 points, 1 point, or a line.
