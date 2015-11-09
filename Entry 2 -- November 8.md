@@ -88,12 +88,10 @@ For this to be possible user procedures would have to be indexable and
 interpretable by a running program, which seems somewhat challenging if they
 are being compiled into Scala functions.
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+### Progress
+
+I'm now working on implementing functions. We'll see how far I get before
+Monday. I had to re-write a lot of the interpreter and AST to allow for them.
 
 ## Questions
 
@@ -101,11 +99,29 @@ design process.
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+Right now I want to start thinking about data. What does it mean for users to
+define new type of data in a geometric context? What comes to mind for me is
+that the user might define something like a square, from segments and/or
+points. How would user defined data interact seemlessly with other objects in
+the language
+
+I'd love to hear your thoughts on the matter.
+
+Functions are also on my mind. I've chosen to do non-recursive, non-capturing
+functions. Does that seem appropriate?
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+What might user defined data be? Should this be supported by the language?
+
+I've decided to go for an interpreter for the time being. What do you see the
+pros and cons to be?
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+I think I spent ~6 hours outside of class.
 
 ## Post-critique summary
 
