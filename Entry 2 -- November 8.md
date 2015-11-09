@@ -17,9 +17,15 @@ are you evaluating your design and implementation?**
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+This week I intended to come up with features. I did this by writing a sample program using my DSL, which can be seen [here](https://github.com/AdamCDunlap/StateOfTheRobot/blob/master/examples/picobot.ino). I'd appreciate input about confusingly-named functions or other features that could be useful.
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
 
+About 9 hours
+
 ## Post-critique summary
+Essentially, Matt said that my project seems like a good size if I keep it at approximately the API level.
 
 ## Post-critique reflection
+One thing that Matt brought up was that he didn't think having a `wait` function that introduces shadow states would be necessary. I thought about this more but I still think it would be useful, although I need to consider more carefully exactly what it does. Even if the wait function itself is non-blocking, if it doesn't let anything in the state machine run, it would not be useful. So there needs to be some logic to say to do something if it's not waiting but have other things interrupt the wait. This perhaps could be implemented by saying that something has the "main logic" and some other part of the code has interrupt or auxilliary logic.
