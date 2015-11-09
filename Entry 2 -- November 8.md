@@ -2,13 +2,6 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
-
 A lot of the description of what I've been looking into this week
 is [ https://github.com/MatthewValentine/project/blob/master/documents/design_and_implementation.md | here ],
 in design_and_implementation.md.
