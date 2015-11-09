@@ -31,7 +31,3 @@ approach?
 team, how did you share the labor?**
 
 5 hours
-
-## Post-critique summary
-
-## Post-critique reflection
