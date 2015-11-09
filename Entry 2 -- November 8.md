@@ -78,6 +78,12 @@ Time to write a parser to see if it does!
 
 Parsing is going to take more work than expected. It would be best to write a file with the test code first, and then base the parser off of it.
 
+###11/8/15
+
+~2-3 hours
+
+Writing up the design-and-implementation deliverable.
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
