@@ -12,17 +12,17 @@ Thinking more about my possibilities I'm becoming more resigned to the necesseci
 
 Today its also been good for me to try and do some constraint programming in Prolog just to see what it feels like, try and make sure I can get the solutions I think I should get based on constraints I set myself. Basically I want to be able to make sure that I can use constraint solvers to do the same logic my brain does, (on a scale that is small enought hat my brain can contain the whole problem) so I can trust it to do larger computations once my brain can't contain the whole problem (the whole reason I'm doing this project ;))
 
+#### From Friday Nov 6
+Was planning to meet with Prof Keller to discuss internal DSLs in prolog but the meeting didnt work out cause I had forgotten about another meeting I had scheduled. I'm going to have to just get started on the Scala project and then (if prolog really calls my name) go back if necessary.
+
+### Sunday Nov 8th
+Spent a bunch of time considering the syntax of my language, trying to figure out what is going to be the most intuitive and easily used way of describing problems in my DSL. One thing I have been thinking about is whether I should ask for a list of possible defining characteristics at the top of the file (so I could have a little more ability to check at compile time) or just pick up a list of them based on all of the inputs. See the mockup.txt file in the Grouper repo for more info about what I mean. 
+
 ## Questions
 
-**What is the most pressing issue for your project? What design decision do
-you need to make, what implementation issue are you trying to solve, or how
-are you evaluating your design and implementation?**
+Right now my most pressing issue is to start getting code down on paper I think. I have spent a bunch of time in limbo because of how sick I was and then trying to wait and see about the best option for implementation of my language. Its important now for me to just go for it and have some fun.
 
-**What questions do you have for your critique partners? How can they best help
-you?**
-
-**How much time did you spend on the project this week? If you're working in a
-team, how did you share the labor?**
+I would like feedback on my syntax design choices, and then as I start writing the parser I'll want feedback on that as well.
 
 ## Post-critique summary
 
