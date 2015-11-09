@@ -14,17 +14,21 @@ This week, I built out a very early stage prototype for the language. It compile
 
 For reference, here's what a sample program looks like:
 
-```add 4 shots espresso;
+```
+add 4 shots espresso;
 pour 3 oz milk;
 scoop 2 spoons sugar;
-sprinkle 10 grams cinnamon;```
+sprinkle 10 grams cinnamon;
+```
 
 And here's the output from running this program:
 
-```adding 4 shots of espresso
+```
+adding 4 shots of espresso
 pouring 3 oz of milk
 scooping 2 spoons of sugar
-sprinkleing 10 grams of cinnamon```
+sprinkleing 10 grams of cinnamon
+```
 
 ## Questions
 
