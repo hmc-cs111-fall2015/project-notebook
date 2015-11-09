@@ -2,8 +2,6 @@
 
 ## Description
 
-**TODO:** 
-
 * I decided to write the API in Scala. I don't think the language choice is as important as the design choices I will be making for the language component. I choce scala because it will make it easier later on to hook-up to the front-end since the front-end will be implemented in Scala.
 * This submission is _hopefully_ a viable implementation of the API. For now the data model is very simple.
 * I decided to create the underlying data model to have a manager (the class that API calls will go to), rooms (which holds schedules), schedules (which hold occupants in hourly slots for the seven days of the week).
