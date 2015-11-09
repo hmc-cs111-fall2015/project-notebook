@@ -34,4 +34,12 @@ About 2 hours spent (wasted?) on trying to fix my project within Eclipse. :-(
 
 ## Post-critique summary
 
+Zoab suggested prioritizing ease-of-use as the primary metric.
+Alex and Zoab both seeemed confused about a part that wrote about _not_ implementing a back-end. I meant to convery that an external persistant back-end is what I would put-off implementing.
+There was a question about whether this would be a new system or a different system. This will be an independant system from the HMC EMS.
+
 ## Post-critique reflection
+
+Some of the critique was confusing, but I think I followed some of the ideas given by the critique.
+Alex supported the idea of working in the traditional API -> frontend -> backend manner.
+Error handling is in the future, so I hope to get to that in the future.
