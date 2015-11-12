@@ -40,6 +40,26 @@ That way, the parser only has to deal with lists.
 
 +15 minutes
 
+9:00-11:30p
+
+Most of the parser is in place. Minor changes to the ir were made (`Area`s and `PlacePoint`s are now both things that inherit from `Instr`, so that a list of `Instr`s can be parsed).
+
+The parsers are cooperative for the most part, but now I'm getting strange errors when trying to use the "rword" parser in the `layer` and `originKeyword` parsers.
+
+Especially on `originKeyword`;
+
+`ident ^^^ topLeft` lets things work fine; `topLeft` is recognized as an `Origin`.
+I also tried using `rword("bottomLeft")`, and that didn't work.
+However, what's really strange is that
+```
+"bottomLeft" ^^^ bottomLeft
+      | rword("topLeft" ^^^ topLeft
+```
+
+specifically without the closing `)` will let `bottomleft` be recognized just fine.
+As soon as the `)` is added in, that line errors and the syntax highlighting stops working.
+
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
