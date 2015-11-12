@@ -38,6 +38,8 @@ Parsing is making it nearly impossible to return a HashMap, which makes some sen
 Instead, add to IR a `tileTable` object that turns a list of (Tilename, Tile) into that HashMap
 That way, the parser only has to deal with lists.
 
++15 minutes
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
