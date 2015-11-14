@@ -59,6 +59,11 @@ However, what's really strange is that
 specifically without the closing `)` will let `bottomleft` be recognized just fine.
 As soon as the `)` is added in, that line errors and the syntax highlighting stops working.
 
+###11/14/15
+
+10-11a
+
+Fixed part of semantics; it now has a loadAST function that will generate the proper amount of maps automatically.
 
 ## Questions
 
