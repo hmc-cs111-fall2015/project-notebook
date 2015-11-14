@@ -65,6 +65,12 @@ As soon as the `)` is added in, that line errors and the syntax highlighting sto
 
 Fixed part of semantics; it now has a loadAST function that will generate the proper amount of maps automatically.
 
+12:10-1:10p
+
+Originally, I was handling sorting the layers in semantics, but instead I ended up writing a simple mergesort function, moved it over to IR, and put it in the map class. Now, when maps are initialized, the list of layers is sorted on the spot, and errors can occur right then if two layers have the same precedence.
+
+THe instrs will also be sorted, with fill instructions before any place instructions
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
