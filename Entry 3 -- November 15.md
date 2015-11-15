@@ -69,7 +69,22 @@ Fixed part of semantics; it now has a loadAST function that will generate the pr
 
 Originally, I was handling sorting the layers in semantics, but instead I ended up writing a simple mergesort function, moved it over to IR, and put it in the map class. Now, when maps are initialized, the list of layers is sorted on the spot, and errors can occur right then if two layers have the same precedence.
 
-THe instrs will also be sorted, with fill instructions before any place instructions
+The instrs will also be sorted, with fill instructions before any place instructions
+
+###11/14/15
+
+11:15-1:15a
+
+Silly mistake: wholeNumber produces a num, but I needed to use num.toInt to make it work.
+This made the entire parser work.
+
+Now, most things are implemented. Filling areas isn't set up, but all of the parsing and AST are.
+Semantics needs to handle filling areas, as well as debug maps.
+Placing tiles is implemented.
+
+The tilemap object is set up, but not quite working.
+Basically, I need to find out how to make something that people can call to write and run the code.
+
 
 ## Questions
 
