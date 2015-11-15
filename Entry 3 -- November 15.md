@@ -85,6 +85,14 @@ Placing tiles is implemented.
 The tilemap object is set up, but not quite working.
 Basically, I need to find out how to make something that people can call to write and run the code.
 
+###11/15/15
+
+1:45-2:30p
+
+Tilemap.scala doesn't give any warnings in Eclipse, but refuses to compile.
+At `freetyle.parsing.parser`, it says it doesn't know what `freetyle` is.
+
+I'm going to make some tiles instead, since I need to anyways.
 
 ## Questions
 
