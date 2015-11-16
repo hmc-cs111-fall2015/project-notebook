@@ -23,4 +23,60 @@ team, how did you share the labor?**
 
 ## Post-critique summary
 
+Adam assuaged my fear that I might have to use the visitor pattern,
+questioned the structure of the flowchart AST,
+and expressed concerns regarding the opt-in philosophy.
+
 ## Post-critique reflection
+
+### Language Choice
+
+Adam reminded me that a benefit of using functional languages like Haskell
+is that it's easy to add new functions to many classes; but in my case,
+the number of functions I want to implement isn't increasing;
+instead I want to add more classes that support a set of functions,
+which is easier to do in an OOP language like Java.
+
+### Flowchart AST
+
+Adam had questioned the purpose of `nextNode` in the `Node` class;
+I talked to him in person about this concern, demonstrating the intended purpose,
+and he agreed that the proposed usage was appropriate.
+
+He also suggested making `Decision` more flexible to account for switch statements,
+but my current concern is to make `Decision` fit for `if`-`else` statements.
+If I have time (which I doubt) after implementing other control structures like loops,
+of which I have a better understanding of their flowchart representation,
+then I'll begin to think about how to represent switch statements&mdash;perhaps
+it's more appropriate to inroduce a new concrete `Node` class
+than to make use of an existing one.
+
+The AST is intentionally brief for the time being.
+I wanted to start with some building blocks for expressing a flowchart,
+use these blocks for code parsing and flowchart construction,
+then expand or modify the block pool with successful integration
+of each control flow construct. As for my initial thoughts on proper linking with subroutines,
+I'm thinking it might be appropriate to add a `Node` that extends `Process`
+with an additional field that points to the other flowchart.
+
+### Opt-In Nature
+
+I think users forgetting comments is a valid concern,
+but I'd hope that they would examine the generate flowcharted
+to ensure that it has the expected components; then if anything is missing,
+they would reeamine their code to ensure they used proper syntax.
+Ideally Codeviz will be clever enough to catch some user mistakes,
+but I think it's reasonable to expect the user to carry some burden
+of checking the generated flowchart to confirm it matches expectations.
+
+To address some of the specific concerns raised:
+If a section is uncommented, then nothing appears for this section in the flowchart.
+This decision seems very reasonable to me. As I've mentioned,
+I don't think users will want _every_ implementation detail to be represented in the flowchart,
+therefore it should not be required that every "section" of code be commented;
+a reasonable usage of Codeviz would be to highlight the high level control flow of a system,
+which could easily mean using few comments in comparison to the amount of written code.
+As for the case where an `if` statement contains Codeviz comments,
+but the statement is not preceded by the appropriate Codeviz comment,
+I think it's appropriate for the user to be given an error,
+notifying them that a Codeviz comment marking the `if` statement was expected.
