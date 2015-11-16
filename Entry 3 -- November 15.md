@@ -1,6 +1,32 @@
 # Design notebook for week ending November 16, 2014
 
+
+
 ## Description
+
+### Interaction
+
+Sometimes when facing a hard question (like how to incorporate custom data into
+a language) you need to think about it. While I mulled the prospect over I
+decided to implement something else - interactivity!
+
+The pre-function / pre-include version of my language had a REPL which allowed
+you to give the interpreter one statement at a time.
+
+Now that I have functions and includes I need to adapt the REPL to work with
+them.
+
+I also think it would be nice to add a visual part to the REPL. It would be
+cool if the construction you were making appeared as you entered each
+statement.
+
+To that end I wrote a [fairly meh] PNG output system, and then looked a bit at
+how to get a java swing window to appear with an image that would change as you
+entered new statements.
+
+
+I came back and made the PNG rendered a bit less meh. It labels shapes now in a
+semi-reasonable way.
 
 **TODO:** Fill in this part with information about your work this week:
 important design decisions, changes to previous decisions, open questions,
@@ -15,11 +41,40 @@ design process.
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+The big topics now are data composition and suggestions.
+
+How should suggestions be presented to the user from the Graphic REPL?
+
+How should the user specify new data types?
+
+As inspiration, consider this:
+
+```
+data Triangle(Point a, Point b, Point c) =
+    Union(Segment(a,b),Segment(b,c),Segment(a,c))
+```
+
+I think that the big things you need are the constructor and the rules for
+intersection, but I could be missing things.
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+I think I need some help thinking of natural ways to do the data declarations.
+
+I've also be wondering about moving away from the parenthesis syntax, and
+towards something more like natural language. Compare
+
+```
+let A = intersection(B, C)
+let A be the intersection of B, C
+```
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+Hmm, maybe 8 hours outside of class. I got the loader/function systems done and
+did the renderer?
 
 ## Post-critique summary
 
