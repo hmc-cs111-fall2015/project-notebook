@@ -23,4 +23,8 @@ team, how did you share the labor?**
 
 ## Post-critique summary
 
+ I didn't get any critique this week
+
 ## Post-critique reflection
+
+N/A
