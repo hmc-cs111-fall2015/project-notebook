@@ -94,17 +94,25 @@ At `freetyle.parsing.parser`, it says it doesn't know what `freetyle` is.
 
 I'm going to make some tiles instead, since I need to anyways.
 
++2 hours
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+How to get things to run from the command line.
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
-**How much time did you spend on the project this week? If you're working in a
-team, how did you share the labor?**
+??? The next thing to think about is probably what kinds of shapes should be included for filling in. Just rectangles and freeform shapes?
+Circles are probably far too difficult for this project.
+
+**How much time did you spend on the project this week?**
+
+~11 hours 15 minutes
 
 ## Post-critique summary
 
