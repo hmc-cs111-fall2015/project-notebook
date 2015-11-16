@@ -78,4 +78,33 @@ did the renderer?
 
 ## Post-critique summary
 
+Robin had a few questions:
+   - Why prohibit recursion?
+   - What is a locus?
+   - What is the space your language does geometry in?
+   - What are the tradeoffs associated with dynamic typing?
+
+He also had a few comments:
+   - Custom data is nice, think about parrallelograms, etc.
+   - Recursion could be good.
+
 ## Post-critique reflection
+
+With regards to Robin's questions:
+   - I prohibited recursion because it is much tougher than the static function
+     implementation I chose. I also think geometry doesn't really use it (at
+     least classically).
+   - A locus is any set of points. Some are uncountable, some are countable.
+   - My language does geometry on R^2.
+   - Dynamic typing makes it harder to check for errors without actually doing
+     the math. With static typing it might also be cool to make this a 100%
+     internal Scala DSL with the Scala type system enforcing types.
+
+With regards to his comments:
+   - I agree that custom data is awesome, and I think I need to firm up how the
+     users define it. I think constructors are necessary (Robin spoke to this),
+     but I also think that some definition of how the type works is required.
+     Then again, perhaps these systems can be one and the same. I'll think about
+     this more in the coming week.
+   - I'm somewhat unsure whether implementing recursion is worth it. If there
+     are compelling examples I would definitely do so.
