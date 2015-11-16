@@ -9,6 +9,11 @@ exciting milestones, preliminary results, etc. Feel free to include images
 code, and any other resources that you think will help clearly convey your
 design process.
 
+In class prototyping, we discussed a few things 
+- Allow for intervals, monthly daily or weekly
+- Monthly Recur model, allow for it
+- define date ranges that can be used in other scopes
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
