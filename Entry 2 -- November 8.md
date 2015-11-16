@@ -26,4 +26,10 @@ I would like feedback on my syntax design choices, and then as I start writing t
 
 ## Post-critique summary
 
+Anna critiqued me this week and provided a lot of helpful feedback. She answered my question about how I should handle the problem of "Should the instructor specify options which are then a hard list of choices, or should students be able to specify new options?". She suggested that I make it so there is a spell-checker and I check everything against options specified by the instructor but then return a list of all new options added that the instructor can review. She also noted that if a GUI was ever implemented that I could probably just use a dropdown, so it might be best to go with a hard list.
+
+She also discussed the benefits of being able to see multiple solutions that fit the constraints and also the benefit of instructors being able to specify general constraints. 
+
 ## Post-critique reflection
+
+I really like the idea of returning a list of words that were added by the students but not included by the instructor. That allows me to have some checking and provide a lot of information to the professor to review questions about words added (is this just a typo? do i want to allow this option?). I also agree with the idea of returning multiple solutions if there are many that work equally well. This allows students/instructors to choose groups that seem best after establishing baseline "goodness" of the groups. The idea of instructors being able to specify constraints is great and I had considered it previously. There has got to be functionality for the professor to explicity limit/force people to work together.
