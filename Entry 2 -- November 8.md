@@ -98,4 +98,30 @@ team, how did you share the labor?**
 
 ## Post-critique summary
 
+Alex felt that `generate debug map as PATH` would be better for procuding the debug map than using a flag.
+He also mentioned that an interactive visualization mode would be great.
+
+Alex said that the syntax for the specifications to where to fill is a bit implicit, and so having a keyword like `rectangle` would be useful. 
+
+The `freeform` keyword came off as a little strange.
+
+Posed questions:
+Should there be names?
+Can tiles be composed into objects that can also be used as tiles?
+Should there be functions with a sequence of specified actions?
+Should there be a custom area definition?
+
+
 ## Post-critique reflection
+
+I was also leaning towards using `generate` for debug maps.
+The interactive visualization would be good to include in a future UI, but is probably beyond the scope of this project. The idea is that the user would be able to make changes and produce maps quickly, though I realize that this isn't optimal.
+
+For composing tiles, it seems like that might be useful - such a thing is usually referred to as a tile set, and shouldn't be to hard to implement.
+
+_After talking in-class:_
+
+Tile sequences could probably be implemented; essentially, it would just reduce copy/pasting.
+Custom area definitions are sort of a stretch goal, but would definitely be possible; the user would supply a series of points, and there's no reason that these can't be saved as an object.
+Tilesets should probably be implemented like mini-maps.
+
