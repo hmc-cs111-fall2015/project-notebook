@@ -20,17 +20,33 @@ so I settled on the [Graphviz Java API],
 which seems to work by writing in [DOT]&mdash;the particular Graphviz language
 used for creating flowcharts&mdash;and then compiling the syntax to the appropriate figure.
 
+Once I actually have to deal with parsing `if` statements,
+I'll probably move to making some sort of `parse()` function.
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+The next big thing will be figuring out how to use the [JavaParser] output
+in a way where I don't just retrieve all the comments at once,
+and instead see the comments in relation to other constructs.
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+If you know of a better way to programmatically generate flowcharts in Java that uses a Maven library,
+I'm all ears. The one I found isn't the most convenient,
+but I think it'll do the job. Also if you look at my code
+and think there's a better way to implement what I currently have, I'm all ears.
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+I probably spent around 7 hours on the project this week:
+5 hours implementing initial process parsing
+and 2 hours researching flowchart creation languages.
 
 ## Post-critique summary
 
@@ -95,4 +111,5 @@ notifying them that a Codeviz comment marking the `if` statement was expected.
 [DOT]: http://www.graphviz.org/content/dot-language
 [Graphviz]: http://www.graphviz.org/
 [Graphviz Java API]: https://github.com/jabbalaci/graphviz-java-api
+[JavaParser]: https://github.com/javaparser/javaparser
 [Maven]: https://maven.apache.org/index.html
