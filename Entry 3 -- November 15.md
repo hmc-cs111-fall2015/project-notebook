@@ -95,3 +95,4 @@ notifying them that a Codeviz comment marking the `if` statement was expected.
 [DOT]: http://www.graphviz.org/content/dot-language
 [Graphviz]: http://www.graphviz.org/
 [Graphviz Java API]: https://github.com/jabbalaci/graphviz-java-api
+[Maven]: https://maven.apache.org/index.html
