@@ -2,12 +2,23 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+This week I added initial support for parsing processes/actions with the `//$` notation.
+The method of doing so is a bit naive because it grabs all of the comments from the source file
+in order but without regard to their position relative to grouping constructs
+(e.g., loops and `if` and `try` blocks).
+Ideally I think only top level processes should be parsed,
+so I'll probably start there next week.
+
+After I got the parsing functioning, I started looking into flowchart creation languages.
+People had suggested [Graphviz]&mdash;which I had seen when first developing the language concept.
+I wanted to do a bit of looking around for other flowchart creation languages before choosing Grphviz,
+but I didn't find any viable alternatives. In looking into how I might use Graphviz,
+I discovered that there is only an official library for C.
+Thankfully there are also some user created Java libraries for using Graphviz.
+I wanted the chosen library to be available on [Maven],
+so I settled on the [Graphviz Java API],
+which seems to work by writing in [DOT]&mdash;the particular Graphviz language
+used for creating flowcharts&mdash;and then compiling the syntax to the appropriate figure.
 
 ## Questions
 
@@ -80,3 +91,7 @@ As for the case where an `if` statement contains Codeviz comments,
 but the statement is not preceded by the appropriate Codeviz comment,
 I think it's appropriate for the user to be given an error,
 notifying them that a Codeviz comment marking the `if` statement was expected.
+
+[DOT]: http://www.graphviz.org/content/dot-language
+[Graphviz]: http://www.graphviz.org/
+[Graphviz Java API]: https://github.com/jabbalaci/graphviz-java-api
