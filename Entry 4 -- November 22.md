@@ -14,6 +14,23 @@ In class prototyping, we discussed a few things
 - Monthly Recur model, allow for it
 - define date ranges that can be used in other scopes
 
+
+Now that my prototype is done and working, I have to start thinking about additional
+features that would entice a person to actually use this product, and to makes sure
+it works they way they want it to. One of the biggest things people use differently
+is date formatting. I haven't thought of a perfect solution yet for this. 
+
+
+As I have been looking over and reviewing my code, here are some things I think
+are vital to add if this is actually going to be used by people:
+- Some way to use different date/time formats. This could be automatic detection
+or having default settings that could be changed in a settings header. 
+- redesign syntax so that curly braces are not necessary. Since my parser already
+has things being interpreted without looking for a closing curly brace, I think this
+is a trivial addition. Would require some user testing though. The only problem here 
+is with sections. Since they kind of need it, will it be confusing if they are the 
+only one using it?
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
