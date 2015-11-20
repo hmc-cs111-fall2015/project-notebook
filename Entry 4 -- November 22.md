@@ -31,6 +31,11 @@ is a trivial addition. Would require some user testing though. The only problem 
 is with sections. Since they kind of need it, will it be confusing if they are the 
 only one using it?
 
+I have also started to think of how a user will use this. Since I don't expect many
+people to actually download scala and stuff to use this DSL, I should have an easier
+way for them to run their language. Should I have a webservice that runs it for them?
+Or produce a jar or exe file that runs it. 
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
