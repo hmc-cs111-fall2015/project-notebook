@@ -2,12 +2,9 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+X
+Spent some time in office hours trying to get a working executable file; will have to wait on that.
+Made minimal progress on the parser; it is failing to parse the name of the tiles, for some reason.
 
 ## Questions
 
