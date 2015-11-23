@@ -42,6 +42,8 @@ I'm really not sure about exact numbers because I worked a lot on my project in
 small increments throughout the week. I certainly spent significant time on it,
 though.
 
-## Post-critique summary
-
-## Post-critique reflection
+## Post-critique summary/reflection
+From my critique, I learned that my example code was not clear enough. With that
+I decided to leave things in the examples directory as tests but also write
+better documentation in the readme that contains simple examples that are more
+informative.
