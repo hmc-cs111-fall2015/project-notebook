@@ -5,6 +5,7 @@
 X
 Spent some time in office hours trying to get a working executable file; will have to wait on that.
 Made minimal progress on the parser; it is failing to parse the name of the tiles, for some reason.
+I might work on setting up the implementation of everything else in between wrestling with the parser.
 
 ## Questions
 
