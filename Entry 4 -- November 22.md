@@ -42,11 +42,18 @@ Or produce a jar or exe file that runs it.
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+What features should I include next? How should I handle allowing users to include
+multiple date and time formats? 
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+same as above
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+around 8 hours
 
 ## Post-critique summary
 
