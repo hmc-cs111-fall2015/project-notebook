@@ -10,7 +10,8 @@ In particular, I'd like to be able to edit Scala classes I've already made,
 in ways more powerful than I think implicits can do,
 but I don't think that plays very nicely with types. :)
 
-So it'll be an external DSL, with Python in the backend.
+So it'll be an external DSL, with Python in the backend. (Parsing is fine for Python as well,
+it has a module `parcon` similar to Scala's parser.)
 Check out `prototype/example.txt` for what the syntax will look like.
 
 Notably, this basically just constructs classes for AST nodes.
