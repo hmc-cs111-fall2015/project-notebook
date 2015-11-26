@@ -41,6 +41,11 @@ the last `FlowchartNode` in each of its branches to correctly generate the flowc
 This shouldn't be terribly difficult to achieve,
 but it'll take some thought to consider how best to save/retrieve that information.
 
+Other Codeviz comments I've included in the file are `//%`
+to indicate a comment that should be included on the flowchart,
+and `//>` to indicate that the text in this comment
+should go with the text from the previous comment.
+
 After I finished adding/updating Codeviz comments, I added some JavaDoc to the new functions.
 I half-expected to stop here as all of this refactoring took more time than I expected,
 but then I looked back at the implementation plan
