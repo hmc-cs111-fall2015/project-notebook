@@ -1,4 +1,4 @@
-# Design notebook for week ending November 23, 2014
+# Design notebook for week ending November 22, 2015
 
 ## Description
 
@@ -24,7 +24,7 @@ In writing these comments, I realized that I had been working under the assumpti
 that flowcharts (and therefore programs) all end at the same point;
 however, this assumption does not hold for the implementation code:
 if ever the 'executable' finds that it does not have the necessary data to generate a flowchart
-(e.g., no "main" method, no Codeviz comments), the executable terminates before generating a DOT file.
+(e.g., no "main" method, no Codeviz comments), the executable terminates before generating a [DOT] file.
 Since "termination" can manifest itself in various ways,
 it's unreasonable for Codeviz to know what termination looks like by just parsing the functional code;
 so I'm currently of the opinion that the syntax should be expanded
@@ -51,7 +51,20 @@ Pretty much immediately (and I had had my doubts),
 I realized that the [Graphviz Java API] I had intended to use isn't actually on Maven.
 So (as maybe I should've done in the first place,)
 I searched the Maven repository for Graphviz Java libraries,
-and thankfully found a better one: [graphviz4j].
+and thankfully found a better library: [graphviz4j].
+This library offers more support for programmatically creating flowcharts,
+so I don't need to be as comfortable with DOT syntax, which is nice.
+
+I baked the Graphviz generation functions for each node right into the class,
+but I later questioned this decsision. When proposing this project,
+Prof Ben mentioned that the flowchart abstract syntax would be a language in itself
+such that people could use the abstract syntax when parsing a different language
+or wanting to produce a flowchart with another flowchart creation language.
+The former of these is functional as long as the parser is written in Java,
+but it's not immediately obvious to me how I might allow people to drop in any flowchart creation language.
+I think it's currently more important to me to expand the the number of nodes
+than to refactor the code to be more extensible currently,
+but I'll keep the concern in the back of my mind.
 
 ## Questions
 
@@ -59,16 +72,26 @@ and thankfully found a better one: [graphviz4j].
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+How I might make flowchart creation more extensible
+(i.e., separate from the flowchart abstract syntax),
+and how the `Decision` implementation should change.
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+Any thoughts on the above or code quality?
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+I probably spent around 9 hours:
+6 hours implementing, 3 hours reflecting.
 
 ## Post-critique summary
 
 ## Post-critique reflection
 
+[DOT]: http://www.graphviz.org/content/dot-language
 [Doxygen]: http://www.stack.nl/~dimitri/doxygen/
 [graphviz4j]: https://github.com/shevek/graphviz4j
 [Graphviz Java API]: https://github.com/jabbalaci/graphviz-java-api
