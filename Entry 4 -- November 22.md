@@ -89,7 +89,16 @@ I probably spent around 9 hours:
 
 ## Post-critique summary
 
+Matthew commented on the flowchart abstract syntax structure,
+and how the relationship between nodes would affect building the flowchart from an AST.
+He also offered advice on implementing the building process.
+
 ## Post-critique reflection
+
+I haven't really considered nesting much yet
+since support for some top-level structures remains to be added.
+The Graphviz suggestion were really great and gave me a leg up on implementing flowchart creation,
+but (as I mention above) I ended up finding a library that does most of the work for me.
 
 [DOT]: http://www.graphviz.org/content/dot-language
 [Doxygen]: http://www.stack.nl/~dimitri/doxygen/
