@@ -63,8 +63,7 @@ The new library for writing flowcharts in DOT (a Graphviz language)
 is better than the previous because it offers more support
 for writing the flowchart encoding programmatically rather than directly in the DOT language.
 
-I didn't know I was using tabs! After reading that I was,
-I immediately updated the file to use spaces instead,
+I didn't know I was using tabs! After reading that I immediately updated the files to use spaces instead,
 and even changed the indentation from 4 to 2 spaces.
 
 Yes, `getMethod` is clunky, but I let it slide since it's hopefully a temporary solution.
