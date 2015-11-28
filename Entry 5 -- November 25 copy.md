@@ -13,7 +13,7 @@ or
 
 `fill area (0,0) (4,5) (2,3) with TILENAME'
 
-Rectangles can be specified with two points (the diagonals), three points (the fourth point is SOMETHING), or four points. Areas can be closed, but will automatically be closed if they aren't.
+Rectangles can be specified with two points (the diagonals), three points (the fourth point is inferred), or four points. Areas can be closed, but will automatically be closed if they aren't.
 
 Currently, there is no check for if the 3/4-point specifications are actually rectangular, and a rectangle is fit around whatever area is given.
 
