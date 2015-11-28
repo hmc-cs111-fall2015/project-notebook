@@ -43,4 +43,32 @@ Probably 4 hours: 1 hour talking with Savannah about the pros and cons of changi
 
 ## Post-critique summary
 
+Dan expressed concerns about my decision to only parse the "main" method,
+suggested some syntax changes, and had some questions and comments on the implementation.
+
 ## Post-critique reflection
+
+The decision to only parse the "main" method is largely a temporary one
+based on the fact that most of the code I'm interested in flowcharting
+occurs in the "main" method&mdash;I needed the implementation to have an initial "top-level" context,
+so I chose the "main" method. Ideally, users would indicate (perhaps via annotations)
+which methods should be flowcharted.
+
+I'm happy _someone_ appreciates my decision to use `Optional`. :relaxed:
+
+The proposed syntax changes for avoiding collisions make sense,
+but I'm not yet convinced I want to add the extra burden to users.
+
+The new library for writing flowcharts in DOT (a Graphviz language)
+is better than the previous because it offers more support
+for writing the flowchart encoding programmatically rather than directly in the DOT language.
+
+I didn't know I was using tabs! After reading that I was,
+I immediately updated the file to use spaces instead,
+and even changed the indentation from 4 to 2 spaces.
+
+Yes, `getMethod` is clunky, but I let it slide since it's hopefully a temporary solution.
+
+[DOT] is the Graphviz language that is best suited to generating flowcharts.
+
+[DOT]: http://www.graphviz.org/content/dot-language
