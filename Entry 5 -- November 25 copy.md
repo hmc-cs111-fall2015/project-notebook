@@ -19,6 +19,8 @@ Currently, there is no check for if the 3/4-point specifications are actually re
 
 More error handling is needed, but I'm not certain how to implement it best.
 
+Next is better commenting, which I can do before getting back from break.
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
