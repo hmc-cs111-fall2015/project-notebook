@@ -19,7 +19,7 @@ Currently, there is no check for if the 3/4-point specifications are actually re
 
 More error handling is needed, but I'm not certain how to implement it best.
 
-Next is better commenting, which I can do before getting back from break.
+Next is better commenting, which I can do before getting back from break. Later, edges will be implemented.
 
 ## Questions
 
