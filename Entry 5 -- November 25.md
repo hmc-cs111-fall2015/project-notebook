@@ -51,5 +51,8 @@ team, how did you share the labor?**
 This is a short week, only a few hours (3)? including studio time.
 
 ## Post-critique summary
+Zoab described how to handle building out a parser as well as some suggestions for ASTs.
+He also made some great comments on implmentations.
 
 ## Post-critique reflection
+I will be incorporating his ideas about how to build a parser and AST in way that will make it seem more like building out a langauge rather than fitting the implmentation into a 'mold,' so to say.
