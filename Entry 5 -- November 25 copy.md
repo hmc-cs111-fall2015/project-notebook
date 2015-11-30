@@ -58,4 +58,33 @@ I've spent perhaps 2 hours outside of class so far.
 At the time of writing this my partner hasn't completed my critique yet. I'll
 poke them tomorrow morning.
 
+I forgot to poke them, but the critique has now been done!
+
+I think that Robin did this critique (there is no name). Assuming that, he
+said...
+
+   1. The explicit type checks on input seem like a good idea
+   1. I should put my logo in the repo.
+   1. That two things come to mind with regards to suggestions
+
+### Suggestions
+
+On one hand I could have tab text-completion, similar to in an IDE where you
+can type `circ`, hit `<TAB>`, and have then get `circle`.
+
+I could also have textual suggestions displayed to the user, on start-up.
+
+Finally, I could have the tab completion be rendered on the screen in gray (or
+something like that).
+
 ## Post-critique reflection
+
+I agree that text-completion would be neat, and complementing it with a visual
+would be even neater. I think it would also be nice to interact with the
+completion system in a more powerful way than just completing the names of
+identifiers (and doing visuals).
+
+In particular I think it would be nice to find out which inputs you can give to
+functions. This is a slightly different type of query.
+
+Perhaps it would be good to support both?
