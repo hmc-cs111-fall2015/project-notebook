@@ -2,24 +2,22 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+This (short) week I made strides into handling the back end! This is great because to this point I kinda felt like tackling it was an impossible task and now I have a clear idea of how to proceed. I mapped out my strategy in words so I know how to go from task to task, which to me is really valuable. I wrote an encoder and decoder to interface with the constraint solver and now I'm actually handing the constraint solving which is pretty fun! I'm excited to run my first program :)
 
 ## Questions
 
-**What is the most pressing issue for your project? What design decision do
-you need to make, what implementation issue are you trying to solve, or how
-are you evaluating your design and implementation?**
+I haven't done a huge amount of work since I was last critiqued so there isn't very much to ask but:
 
-**What questions do you have for your critique partners? How can they best help
-you?**
+1) How much unit testing are you doing in your projects? How much commenting? I'm wondering because I haven't embarked on this at all and know it may be time consuming and unearth some bugs. When do you plan on doing this?
+
+2) Do you guys feel like someone else could write a program in your language right now?
+
+3) How much work have you guys done on throwing errors for your language?
 
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+3-5 hours
 
 ## Post-critique summary
 
