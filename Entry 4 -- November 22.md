@@ -57,4 +57,9 @@ team, how did you share the labor?**
 
 ## Post-critique summary
 
+Anna suggested that I work on making my variables less clunky and add support for the existence of whitespace. She also agreed (with both Alex and me) that mapping to and from ints is the best way to proceed with the constraint solver.
+
+Alex suggested I look into the possibility of changing what the parser considers "whitespace" or alter my pre-parser if I need to make more whitespace changes. He also suggested the addition of a newline/comma equivalence.
+
 ## Post-critique reflection
+Anna's suggestion about making variables less clunky is great and is something that I've considered before. I think I realized how I can do it cleanly. The pyparser im using does not allow for the editing of what "whitespace" is but I think I can alter my prepass with no problem. The one thing is that I'm currently using new lines as significant characters for something other than commas, so I'm not sure if I can have it mean both. But I'm definitely going to look into it because _i really like that idea_.
