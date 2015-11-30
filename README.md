@@ -6,7 +6,7 @@
 
 A notebook to track the progress of the [SimpleEMS project] [SimpleEMS].
 
-A notebook is entry is made every week and details both the response to critiques from that week and how progress is each week.
+A notebook entry is made every week and details both the response to critiques from that week and how progress is each week.
 
 See the [project description][description] for instructions on keeping the 
 notebook.
