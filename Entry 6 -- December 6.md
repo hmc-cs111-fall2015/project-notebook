@@ -25,6 +25,15 @@ I need to get to the bottom of this, have better error handling, and then it wil
 
 Also, now the code can be run in Eclipse by entering the name of the map file, without the `.txt`, so long as the file is in the src directory. This may be changed later on.
 
+The fill commands work properly.
+
+Everything is implemented except for edges, which isn't too much of a deal.
+Working on error handling. One question is, should users be allowed to draw things outside of the map?
+For placing tiles and making areas, it may be useful. However, users would then be allowed to do things that are inefficient.
+Ideally, throw a warning.
+
+Some more error handling with the parsing, and then start making more tiles to continue with testing.
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
