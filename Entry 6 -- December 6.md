@@ -17,6 +17,14 @@ Debug maps for placing tiles works!
 To do: Fix fill commands
 Better error handling!
 
+Now, fill commands work, but in strange ways.
+Debug fill maps work perfectly.
+When filling in rectangles, tiles are only placed in areas that they can fit 100% inside of.
+When filling in other areas, they have strange behavior.
+I need to get to the bottom of this, have better error handling, and then it will be complete.
+
+Also, now the code can be run in Eclipse by entering the name of the map file, without the `.txt`, so long as the file is in the src directory. This may be changed later on.
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
