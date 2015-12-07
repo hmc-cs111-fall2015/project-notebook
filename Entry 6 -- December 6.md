@@ -2,12 +2,34 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+### Suggestions
+
+The user can now ask for suggested applications of a construction in the GREPL.
+An example that will show you possible circles:
+
+```
+Construct $ :s circle
+```
+
+This also works with constructions that the user has included.
+
+It would be cool to expand this feature to get information about the
+constructions available, to search across both parameter and construction space
+simultaneously and then do better filtering out what results you care about.
+
+### Logo
+
+There's a logo. It is just the word construct in a geometric font, with the
+beginning of the word having a construction background.
+
+I like its elegance, I like the way in which it shows how constructions can be
+used to draw cool things, and how you can use abstraction to obscure the
+details when you want.
+
+### Undo
+
+The GREPL has an undo command, `:u` or `:undo`, which undoes the last statement
+entered.
 
 ## Questions
 
@@ -15,11 +37,19 @@ design process.
 you need to make, what implementation issue are you trying to solve, or how
 are you evaluating your design and implementation?**
 
+Welp, this is the end. I think I would like to write better compiler into LaTeX
+
+I would like to replace `new` with a better way of excluding items from a set.
+
 **What questions do you have for your critique partners? How can they best help
 you?**
 
+All good :). I'll appreciate any feedback.
+
 **How much time did you spend on the project this week? If you're working in a
 team, how did you share the labor?**
+
+8hrs outside?
 
 ## Post-critique summary
 
