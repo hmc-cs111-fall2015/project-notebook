@@ -9,6 +9,17 @@ exciting milestones, preliminary results, etc. Feel free to include images
 code, and any other resources that you think will help clearly convey your
 design process.
 
+It wasn't easy but setting are now a part of calendarscript (probably will
+be renamed to rcalscript). I won't write about it too much since it is 
+already up on the wiki here: https://github.com/aputman/calendarscript/wiki/Settings
+.
+
+Basically users can define how the want to write dates and times, and the regex
+that interprets the DSL changes based on their definitions. The Settings class
+was also built up so that it is ready for more complex and interpreter changing
+settings. 
+
+
 ## Questions
 
 **What is the most pressing issue for your project? What design decision do
