@@ -2,12 +2,87 @@
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+###11/2/15
+
+9:45-10:45a
+
+Trying to get the scala files set up.
+
+Everything is almost working, the only problem is adding parsers; I have no clue how to add a jar file.
+Or work eclipse at all, basically.
+
+There's using "configure build path" which would be fine and dandy if scala-parser-combinators_2.11-1.0.4.jar was actually in the lib folder for External Piconot and not in Referenced Libraries which isn't accessible!
+Fantastic.
+
+_All I had to do was download the .jar file from the internet._
+
+With that being said, perhaps I can find a nice way to add the library I found.
+
+###11/4/15
+
+1:15-2:30p
+In-class work time.
+
+Re-downloading the .jar file. Apparently it wasn’t put in the FreeTyle folder (should fix this).
+
+Tile: either freeform or not
+freeform tiles do not inherit from normal tiles
+has: name, file, optional edge (file)
+
+Since basic tiles can have edges and freeform tiles have anchor points, they’ll be handled too differently to warrant having one extend the other.
+
+An image can be used for either freeform or basic tiles if, for instance, there’s a large object that may be repeated, but also may be scattered along the map (for example, a row of stalagmites across the back of the map, but also some scattered here and there).
+
+Point: has x and y coordinates.
+
+It’s probably going to be useful to have this as an object.
+
+Map: always the same
+map has width, height, optional origin (keyword), mutable list of Layers
+
+Layer: has a number to indicate precedence (highest value = topmost layer), mutable list of Areas, mutable list of (FreeTile, Point).
+
+Area: has a tile, mutable list of (Point, Point), each of which specifies a rectangular zone to fill in with the tile
+This is what will later be changed for non-rectangular zones.
+First iteration: handle just a single rectangle. 
+Second iteration: handle multiple rectangles.
+Third iteration: handle a list of Points that map out a geometric area.
+
+How to handle second iteration: Make the large rectangle, carve out areas of transparency.
+
+Implement these objects, or at least up to Layers, because the AST will be a list of Layers that will be handled by the semantics to generate the final image.
+
+Then, start focusing on semantics and outputting an image before working on any parsing.
+
+###11/7/15
+9:30-10:45a
+
+It seems like it would be easier to work on freeform tile placement first, for the first deliverable.
+
+Now is the time to try, again, to add the IP library (scrimage) using sbt.
+
+I have no idea how to use sbt.
+
+Since this is just layering images and nothing else, I'll just do it myself using the built-in Java stuff(java.awt.image.BufferedImage is a thing).
+
+For now, the background color is set to white.
+
+11:30- 12:30a
+
+Started to implement semantics.scala.
+
+9:00-11:00p
+
+I have no idea if it works, but I have semantics using `java.io.File` and `java.awt`
+Time to write a parser to see if it does!
+
+Parsing is going to take more work than expected. It would be best to write a file with the test code first, and then base the parser off of it.
+
+###11/8/15
+
+~2-3 hours
+
+Writing up the design-and-implementation deliverable.
 
 ## Questions
 
@@ -23,4 +98,30 @@ team, how did you share the labor?**
 
 ## Post-critique summary
 
+Alex felt that `generate debug map as PATH` would be better for procuding the debug map than using a flag.
+He also mentioned that an interactive visualization mode would be great.
+
+Alex said that the syntax for the specifications to where to fill is a bit implicit, and so having a keyword like `rectangle` would be useful. 
+
+The `freeform` keyword came off as a little strange.
+
+Posed questions:
+Should there be names?
+Can tiles be composed into objects that can also be used as tiles?
+Should there be functions with a sequence of specified actions?
+Should there be a custom area definition?
+
+
 ## Post-critique reflection
+
+I was also leaning towards using `generate` for debug maps.
+The interactive visualization would be good to include in a future UI, but is probably beyond the scope of this project. The idea is that the user would be able to make changes and produce maps quickly, though I realize that this isn't optimal.
+
+For composing tiles, it seems like that might be useful - such a thing is usually referred to as a tile set, and shouldn't be to hard to implement.
+
+_After talking in-class:_
+
+Tile sequences could probably be implemented; essentially, it would just reduce copy/pasting.
+Custom area definitions are sort of a stretch goal, but would definitely be possible; the user would supply a series of points, and there's no reason that these can't be saved as an object.
+Tilesets should probably be implemented like mini-maps.
+
