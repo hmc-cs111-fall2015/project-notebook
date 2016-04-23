@@ -1,19 +1,14 @@
-# Design notebook for week ending November 30, 2014
+# Design notebook for week ending December 6, 2015
 
 ## Description
 
-**TODO:** Fill in this part with information about your work this week:
-important design decisions, changes to previous decisions, open questions,
-exciting milestones, preliminary results, etc. Feel free to include images
-(e.g., a sketch of the design or a screenshot of a running program), links to
-code, and any other resources that you think will help clearly convey your
-design process.
+* This week I continued to work on the language design and where the language  _potentially_ could go.
+* Put together the presentation for our class presentations
+* Not all of my work is complete, but the remainder will go in my final write up since there is no notebook entry next week
 
 ## Questions
 
-**What is the most pressing issue for your project? What design decision do
-you need to make, what implementation issue are you trying to solve, or how
-are you evaluating your design and implementation?**
+* How would you expand the language?
 
 **What questions do you have for your critique partners? How can they best help
 you?**
